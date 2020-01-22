@@ -1,5 +1,5 @@
 {
-  "name": "spring-react-boilerplate",
+  "name": "anonymous",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -10,6 +10,7 @@
     "@stomp/stompjs": "^4.0.2",
     "axios": "^0.18.0",
     "bootstrap": "^4.0.0",
+    "http-proxy-middleware": "^0.20.0",
     "jwt-decode": "^2.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -30,16 +31,16 @@
     "eject": "react-scripts eject",
     "precommit": "lint-staged"
   },
-  "proxy": {
-    "/api": {
-      "target": "http://localhost:8080"
-    },
-    "/auth": {
-      "target": "http://localhost:8080"
-    },
-    "/socket": {
-      "target": "http://localhost:8080",
-      "ws": true
-    }
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
